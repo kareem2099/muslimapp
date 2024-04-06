@@ -1,0 +1,53 @@
+{
+  "plural": {
+    "language_selection": {
+      "title": "Выберите язык"
+    },
+    "horizontal_list": {
+      "adeia": "Дуа",
+      "tasbih": "похвала",
+      "allah names": "Имена Аллаха",
+      "salah": "Молитвы"
+    },
+    "doaa_page": {
+      "title": "Дуа",
+      "doaa_1": "Дуа 1",
+      "doaa_2": "Дуа 2",
+      "doaa_3": "Дуа 3",
+      "doaa_4": "Дуа 4",
+      "doaa_5": "Дуа 5",
+      "doaa_6": "Дуа 6",
+      "doaa_7": "Дуа 7"
+    },
+    "tasbih_page" : {
+      "appBarTitle": "Тасбих",
+    "backButton": "Назад",
+    "tasbehCount": "Количество тасбих",
+    "normalCount": "Обычный счет",
+    "round": "Круг",
+    "resetButton": "Сброс",
+    "tasbeh": "Тасбих",
+    "randomColorText": "Случайный цвет"
+    },
+    "allah_names_page": {
+      "appBarTitle": "Имена Аллаха",
+      "backButton": "Назад"
+    },
+    "salah_page" : {
+      "appBarTitle": "Молитвы",
+      "hijri Date" : "Хиджри Дата",
+      "current Salah" : "Текущая Молитва",
+      "nextSalah": "Следующая молитва",
+      "time to next Salah is" : "Время до следующей молитвы",
+      "hijri Month Length" : "Длина Хиджри Месяца"
+    },
+    "salah_list": {
+      "Al_Fajr": "Аль-Фаджр",
+      "Sunrise": "Восход",
+      "Aduher": "Адухер",
+      "Asr": "Аср",
+      "Maghreb": "Магриб",
+      "Eshaa": "Иша"
+    }
+  }
+}

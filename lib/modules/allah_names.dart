@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:muslimapp/models/allah_names_list.dart';
+import 'package:flutter_translate/flutter_translate.dart';
 
 class AllahNames extends StatelessWidget {
   const AllahNames({Key? key}) : super(key: key);
@@ -8,7 +9,7 @@ class AllahNames extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('أسماء الله الحسنى'),
+          title: Text(translate('plural.allah_names_page.appBarTitle')),
           backgroundColor: Colors.teal,
           // The leading property can be used to customize the AppBar icon like a back button
           leading: IconButton(

@@ -2,6 +2,7 @@ import 'package:asmaulhusna/asmaulhusna.dart';
 
 // Get all Arabic names
 List<String> allArabicNames = getEveryArabicName();
+List<String> allEnglishNames = getEveryEnglishName();
 
 // Define a list to hold meanings for each name
 List<String> allahNamesMeaning = [
