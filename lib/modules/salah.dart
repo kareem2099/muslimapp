@@ -3,6 +3,7 @@ import 'package:muslimapp/models/salah_list.dart';
 import 'dart:async';
 import 'package:hijri/hijri_calendar.dart';
 import 'package:intl/intl.dart';
+import 'package:flutter_translate/flutter_translate.dart';
 
 class SalahWidget extends StatefulWidget {
   const SalahWidget({Key? key}) : super(key: key);
@@ -82,7 +83,7 @@ class _SalahWidgetState extends State<SalahWidget> {
       final nextSalahTimeParsedNextDay =
           DateFormat('yyyy-MM-dd HH:mm:ss a').parse(nextSalahTimeNextDay);
       final difference =
-          nextSalahTimeParsedNextDay.difference(currentTimeParsed).inSeconds;
+          nextSalahTimeParsedNextDay.difference(DateTime.now()).inSeconds;
 
       final totalSeconds = difference >= 0
           ? difference
@@ -95,7 +96,7 @@ class _SalahWidgetState extends State<SalahWidget> {
       return '${hours.toString().padLeft(2, '0')}:${minutes.toString().padLeft(2, '0')}:${seconds.toString().padLeft(2, '0')}';
     } else {
       final difference =
-          nextSalahTimeParsed.difference(currentTimeParsed).inSeconds;
+          nextSalahTimeParsed.difference(DateTime.now()).inSeconds;
 
       final totalSeconds = difference >= 0
           ? difference
@@ -120,6 +121,23 @@ class _SalahWidgetState extends State<SalahWidget> {
     HijriCalendar.setLocal(locale);
 
     hDate = HijriCalendar.fromDate(DateTime.now());
+  }
+
+  String getNextSalah() {
+    final nyPrayerTimes = SalahList.getPrayerTimes();
+    final currentTime = DateFormat('HH:mm:ss a').format(DateTime.now());
+
+    // Find the index of the next Salah time
+    final nextSalahIndex = nyPrayerTimes.indexWhere(
+      (salah) => currentTime.compareTo(salah['salahTime']!) < 0,
+    );
+
+    if (nextSalahIndex != -1) {
+      return nyPrayerTimes[nextSalahIndex]['salah']!;
+    } else {
+      // If the current time is after the last Salah time, return the first Salah time of the next day
+      return nyPrayerTimes[0]['salah']!;
+    }
   }
 
   @override
@@ -150,7 +168,7 @@ class _SalahWidgetState extends State<SalahWidget> {
           ),
           const SizedBox(height: 15),
           Text(
-            'Hijri Date: ${_today.toFormat("MMMM dd yyyy")}', // Display Hijri date
+            '${translate('plural.salah_page.hijri Date')}: ${_today.toFormat("MMMM dd yyyy")}', // Display Hijri date
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 20,
@@ -159,11 +177,20 @@ class _SalahWidgetState extends State<SalahWidget> {
           ),
           const SizedBox(height: 15),
           Text(
-            'Current Salah: ${currentPrayer ?? 'Loading...'}',
+            '${translate('plural.salah_page.current Salah')}: ${currentPrayer ?? 'Loading...'}',
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 20,
               color: _getCurrentPrayerColor(),
+            ),
+          ),
+          const SizedBox(height: 15),
+          Text(
+            '${translate('plural.salah_page.Next Salah')}: ${getNextSalah()}',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+              color: Colors.black,
             ),
           ),
           const SizedBox(height: 15),
@@ -222,7 +249,7 @@ class _SalahWidgetState extends State<SalahWidget> {
               border: Border.all(color: Colors.grey), // Border
             ),
             child: Text(
-              'Time to next Salah is:\n$timeToNextSalah',
+              '${translate('plural.salah_page.time to next Salah is')}:\n$timeToNextSalah',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 16,
@@ -232,7 +259,7 @@ class _SalahWidgetState extends State<SalahWidget> {
           ),
           const SizedBox(height: 70),
           Text(
-            'Hijri Month Length: ${hDate.lengthOfMonth}', // Display Hijri month length
+            "${translate('plural.salah_page.hijri Month Length')}: ${hDate.lengthOfMonth}", // Display Hijri month length
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 20,

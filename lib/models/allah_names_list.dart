@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'allah_names_model.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'search_delegates.dart';
+import 'package:flutter_translate/flutter_translate.dart';
 
 class AllahNamesGrid extends StatefulWidget {
   const AllahNamesGrid({Key? key}) : super(key: key);
@@ -16,7 +17,7 @@ class _AllahNamesGridState extends State<AllahNamesGrid> {
   bool isContainerVisible = false;
   String currentMeaning = '';
   TextEditingController searchController = TextEditingController();
-  List<String> filteredNames = [];
+  List<String> filteredNames = []; // Initial list set to Arabic names
   final AllahNamesSearchDelegate delegate = AllahNamesSearchDelegate(
     allNames: allArabicNames,
     filterCallback: (String query) {
@@ -34,7 +35,7 @@ class _AllahNamesGridState extends State<AllahNamesGrid> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Allah Names'),
+        title: Text(translate('plural.allah_names_page.appBarTitle')),
         actions: [
           IconButton(
             icon: const Icon(Icons.search),
@@ -46,8 +47,8 @@ class _AllahNamesGridState extends State<AllahNamesGrid> {
               if (selectedName != null) {
                 setState(() {
                   filteredNames = [selectedName];
-                  currentMeaning =
-                      allahNamesMeaning[allArabicNames.indexOf(selectedName)];
+                  currentMeaning = allahNamesMeaning[filteredNames.indexOf(
+                      selectedName)]; // Use filteredNames list to get index
                   isContainerVisible =
                       true; // Show the container only when a name is selected
                 });
@@ -124,8 +125,8 @@ class _AllahNamesGridState extends State<AllahNamesGrid> {
             onTap: () {
               setState(() {
                 isContainerVisible = true;
-                currentMeaning =
-                    allahNamesMeaning[allArabicNames.indexOf(name)];
+                currentMeaning = allahNamesMeaning[filteredNames
+                    .indexOf(name)]; // Use filteredNames list to get index
               });
             },
             child: _buildGridItem(name),
@@ -143,8 +144,7 @@ class _AllahNamesGridState extends State<AllahNamesGrid> {
           onTap: () {
             setState(() {
               isContainerVisible = true;
-              currentMeaning = allahNamesMeaning[
-                  allArabicNames.indexOf(filteredNames[index])];
+              currentMeaning = allahNamesMeaning[index]; // Use index directly
             });
           },
           child: AnimationConfiguration.staggeredList(

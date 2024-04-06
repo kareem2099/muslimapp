@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:adhan/adhan.dart';
+import 'package:flutter_translate/flutter_translate.dart';
 
 class SalahList {
   static List<Map<String, String>> getPrayerTimes() {
@@ -15,27 +16,27 @@ class SalahList {
 
     return [
       {
-        "salah": "Al_Fajr",
+        "salah": translate('plural.salah_list.Al_Fajr'),
         "salahTime": DateFormat('HH:mm:ss a').format(nyPrayerTimes.fajr)
       },
       {
-        "salah": "Sunrise",
+        "salah": translate('plural.salah_list.Sunrise'),
         "salahTime": DateFormat('HH:mm:ss a').format(nyPrayerTimes.sunrise)
       },
       {
-        "salah": "Aduher",
+        "salah": translate('plural.salah_list.Aduher'),
         "salahTime": DateFormat('HH:mm:ss a').format(nyPrayerTimes.dhuhr)
       },
       {
-        "salah": "Asr",
+        "salah": translate('plural.salah_list.Asr'),
         "salahTime": DateFormat('HH:mm:ss a').format(nyPrayerTimes.asr)
       },
       {
-        "salah": "Maghreb",
+        "salah": translate('plural.salah_list.Maghreb'),
         "salahTime": DateFormat('HH:mm:ss a').format(nyPrayerTimes.maghrib)
       },
       {
-        "salah": "Eshaa",
+        "salah": translate('plural.salah_list.Eshaa'),
         "salahTime": DateFormat('HH:mm:ss a').format(nyPrayerTimes.isha)
       },
     ];
@@ -43,11 +44,11 @@ class SalahList {
 
   static Color getCurrentPrayerColor() {
     String currentSalah = getCurrentPrayer();
-    if (currentSalah == "Al_Fajr" ||
-        currentSalah == "Aduher" ||
-        currentSalah == "Asr" ||
-        currentSalah == "Maghreb" ||
-        currentSalah == "Eshaa") {
+    if (currentSalah == translate('plural.salah_list.Al_Fajr') ||
+        currentSalah == translate('plural.salah_list.Aduher') ||
+        currentSalah == translate('plural.salah_list.Asr') ||
+        currentSalah == translate('plural.salah_list.Maghreb') ||
+        currentSalah == translate('plural.salah_list.Eshaa')) {
       return Colors.orangeAccent; // Set blue color for the current Salah
     } else {
       return Colors.white; // Set default color for other times
@@ -71,17 +72,17 @@ class SalahList {
 
     DateTime now = DateTime.now();
     if (now.isBefore(nyPrayerTimes.fajr)) {
-      return 'Al_Fajr';
+      return translate('plural.salah_list.Al_Fajr');
     } else if (now.isBefore(nyPrayerTimes.sunrise)) {
-      return 'Sunrise';
+      return translate('plural.salah_list.Sunrise');
     } else if (now.isBefore(nyPrayerTimes.dhuhr)) {
-      return 'Aduher';
+      return translate('plural.salah_list.Aduher');
     } else if (now.isBefore(nyPrayerTimes.asr)) {
-      return 'Asr';
+      return translate('plural.salah_list.Asr');
     } else if (now.isBefore(nyPrayerTimes.maghrib)) {
-      return 'Maghreb';
+      return translate('plural.salah_list.Maghreb');
     } else if (now.isBefore(nyPrayerTimes.isha)) {
-      return 'Eshaa';
+      return translate('plural.salah_list.Eshaa');
     } else {
       return ''; // Return empty string if no prayer time matches
     }

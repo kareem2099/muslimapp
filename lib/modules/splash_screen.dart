@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:muslimapp/layout/home_screen.dart'; // Import your HomeScreen or any other screen you want to navigate to after the splash screen.
+import 'package:muslimapp/models/languageScreen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
           builder: (context) =>
-              const HomeScreen(), // Replace with your desired screen
+              LanguageSelectionPage(), // Replace with your desired screen
         ),
       );
     });
@@ -34,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'assets/Animation.gif',
+              'assets/tra/Animation.gif',
               width: 200, // Adjust width as needed
               height: 200, // Adjust height as needed
             ),

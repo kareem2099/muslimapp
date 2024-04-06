@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:muslimapp/models/horizontal_list.dart';
+import 'package:muslimapp/models/languageScreen.dart'; // Assuming the name of the language selection page is LanguageSelectorPage
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -13,12 +14,12 @@ class HomeScreen extends StatelessWidget {
             Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/home.jpeg'),
+                  image: AssetImage('assets/tra/home.jpeg'),
                   fit: BoxFit.cover,
                 ),
               ),
             ),
-            const Center(
+            Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

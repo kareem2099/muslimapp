@@ -4,6 +4,7 @@ import 'package:muslimapp/modules/allah_names.dart';
 import 'package:muslimapp/modules/prayers.dart';
 import 'package:muslimapp/modules/salah.dart';
 import 'package:muslimapp/modules/tasbih.dart';
+import 'package:flutter_translate/flutter_translate.dart';
 
 class HorizontalListButtons extends StatefulWidget {
   const HorizontalListButtons({Key? key}) : super(key: key);
@@ -23,11 +24,13 @@ class _HorizontalListButtonsState extends State<HorizontalListButtons> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              buildButton(context, 'adeia', 'assets/adeia.jpg', () {
+              buildButton(context, translate('plural.horizontal_list.adeia'),
+                  'assets/tra/adeia.jpg', () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => const DoaaPage()));
               }),
-              buildButton(context, 'sebha', 'assets/sebha.jpg', () {
+              buildButton(context, translate('plural.horizontal_list.tasbih'),
+                  'assets/tra/sebha.jpg', () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
@@ -38,13 +41,17 @@ class _HorizontalListButtonsState extends State<HorizontalListButtons> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              buildButton(context, 'allah names', 'assets/allahNames.gif', () {
+              buildButton(
+                  context,
+                  translate('plural.horizontal_list.allah names'),
+                  'assets/tra/allahNames.gif', () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
                         builder: (context) => const AllahNames()));
               }),
-              buildButton(context, 'salah', 'assets/home.jpeg', () {
+              buildButton(context, translate('plural.horizontal_list.salah'),
+                  'assets/tra/home.jpeg', () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(

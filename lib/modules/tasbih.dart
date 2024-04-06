@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
+import 'package:flutter_translate/flutter_translate.dart';
 
 class Tasbih extends StatefulWidget {
   final List<String> tasbeh;
@@ -67,7 +68,7 @@ class _TasbihState extends State<Tasbih> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('sebha'),
+        title: Text(translate('plural.tasbih_page.appBarTitle')),
         backgroundColor: Colors.teal,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
@@ -133,16 +134,18 @@ class _TasbihState extends State<Tasbih> {
               ),
             ),
           ),
-          Text("Tasbeh Count: ${tasbehCount + 1}/${widget.tasbeh.length}"),
-          Text("Normal Count: $normalCount/32"),
-          Text("Round $round"),
+          Text(
+              "${translate('plural.tasbih_page.tasbehCount')}: ${tasbehCount + 1}/${widget.tasbeh.length}"),
+          Text(
+              "${translate('plural.tasbih_page.normalCount')}: $normalCount/32"),
+          Text("${translate('plural.tasbih_page.round')} $round"),
           Padding(
             padding: const EdgeInsets.only(left: 8),
             child: Align(
               alignment: Alignment.centerLeft,
               child: ElevatedButton(
                 onPressed: resetCounts,
-                child: const Text('Reset'),
+                child: Text(translate('plural.tasbih_page.resetButton')),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xff9e672f),
                   shape: RoundedRectangleBorder(
@@ -160,12 +163,12 @@ class _TasbihState extends State<Tasbih> {
                 radius: 100,
                 backgroundColor:
                     _buttonColor, // Use the variable to set the color
-                child: const Text(
-                  "سبح",
+                child: Text(
+                  translate('plural.tasbih_page.tasbeh'),
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                 ),
               ),
