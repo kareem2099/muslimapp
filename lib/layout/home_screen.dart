@@ -24,23 +24,6 @@ class HomeScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   HorizontalListButtons(),
-                  SizedBox(height: 20), // Add some spacing
-                  TextButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => LanguageSelectionPage()),
-                      );
-                    },
-                    child: Text(
-                      'Change Language',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                      ),
-                    ),
-                  ),
                 ],
               ),
             ),

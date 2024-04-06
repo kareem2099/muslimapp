@@ -34,7 +34,8 @@ flutter:
   uses-material-design: true
   assets:
    - assets/tra/
-  #  - images/a_dot_ham.jpeg
+   - assets/
+   - android/app/src/main/res/
   # fonts:
   #   - family: Schyler
   #     fonts:

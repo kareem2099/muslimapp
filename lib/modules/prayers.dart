@@ -17,13 +17,13 @@ class _DoaaPageState extends State<DoaaPage> {
   bool isPlaying = false;
 
   final List<String> prayers = [
-    'audio1.mp3',
-    'assets/tra/audio2.mp3',
-    'assets/tra/audio3.mp3',
-    'assets/tra/audio4.mp3',
-    'assets/tra/audio5.mp3',
-    'assets/tra/audio6.mp3',
-    'assets/tra/audio7.mp3',
+    'doaa_1.mp3',
+    'doaa_2.mp3',
+    'doaa_3.mp3',
+    'doaa_4.mp3',
+    'doaa_5.mp3',
+    'doaa_6.mp3',
+    'doaa_7.mp3',
     // Add more prayers here
   ];
 
