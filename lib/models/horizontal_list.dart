@@ -25,12 +25,12 @@ class _HorizontalListButtonsState extends State<HorizontalListButtons> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               buildButton(context, translate('plural.horizontal_list.adeia'),
-                  'assets/tra/adeia.jpg', () {
+                  'assets/images/adeia.jpg', () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => const DoaaPage()));
               }),
               buildButton(context, translate('plural.horizontal_list.tasbih'),
-                  'assets/tra/sebha.jpg', () {
+                  'assets/images/sebha.jpg', () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
@@ -44,14 +44,14 @@ class _HorizontalListButtonsState extends State<HorizontalListButtons> {
               buildButton(
                   context,
                   translate('plural.horizontal_list.allah names'),
-                  'assets/tra/allahNames.gif', () {
+                  'assets/images/allahNames.gif', () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
                         builder: (context) => const AllahNames()));
               }),
               buildButton(context, translate('plural.horizontal_list.salah'),
-                  'assets/tra/home.jpeg', () {
+                  'assets/images/home.jpeg', () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(

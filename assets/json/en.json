@@ -1,0 +1,56 @@
+{
+  "plural": {
+    "language_selection": {
+      "title": "Choose Language"
+    },
+    "horizontal_list": {
+      "adeia": "adeia",
+      "tasbih": "tasbih",
+      "allah names": "Names of Allah",
+      "salah": "Salah"
+    },
+    "doaa_page": {
+      "title": "Doaa",
+      "doaa_1": "Doaa 1",
+      "doaa_2": "Doaa 2",
+      "doaa_3": "Doaa 3",
+      "doaa_4": "Doaa 4",
+      "doaa_5": "Doaa 5",
+      "doaa_6": "Doaa 6",
+      "doaa_7": "Doaa 7"
+    },
+    "tasbih_page" : {
+    "appBarTitle": "Tasbih",
+    "backButton": "Back",
+    "tasbehCount": "Tasbeh Count",
+    "normalCount": "Normal Count",
+    "round": "Round",
+    "resetButton": "Reset",
+    "tasbeh": "Tasbeh",
+    "randomColorText": "Random Color"
+    },
+    "allah_names_page": {
+      "appBarTitle": "Names of Allah",
+      "backButton": "Back"
+    },
+    "salah_page" : {
+      "appBarTitle": "Salah",
+      "hijri Date" : "Hijri Date",
+      "current Salah" : "Current Salah",
+      "Next Salah" : "Next Salah",
+      "time to next Salah is" : "Time to next Salah is",
+      "hijri Month Length" : "Hijri Month Length"
+    },
+    "salah_list" : {
+      "Al_Fajr" : "Al_Fajr",
+      "Sunrise" : "Sunrise",
+      "Aduher" : "Aduher",
+      "Asr" : "Asr",
+      "Maghreb" : "Maghreb",
+      "Eshaa" : "Eshaa"
+    },
+    "splash_Screen" : {
+      "Muslim App" : "Muslim App"
+    }
+  }
+}

@@ -17,15 +17,19 @@ class _DoaaPageState extends State<DoaaPage> {
   bool isPlaying = false;
 
   final List<String> prayers = [
-    'doaa_1.mp3',
-    'doaa_2.mp3',
-    'doaa_3.mp3',
-    'doaa_4.mp3',
-    'doaa_5.mp3',
-    'doaa_6.mp3',
-    'doaa_7.mp3',
+    'assets/audios/doaa_1.mp3',
+    'assets/audios/doaa_2.mp3',
+    'assets/audios/doaa_3.mp3',
+    'assets/audios/doaa_4.mp3',
+    'assets/audios/doaa_5.mp3',
+    'assets/audios/doaa_6.mp3',
+    'assets/audios/doaa_7.mp3',
     // Add more prayers here
   ];
+
+  final List<double> playbackRates = [0.5, 1.0, 1.5, 2.0]; // Playback rates
+
+  int currentPlaybackRateIndex = 1; // Initial playback rate index
 
   @override
   void initState() {
@@ -35,6 +39,19 @@ class _DoaaPageState extends State<DoaaPage> {
         duration = d;
       });
     });
+
+    audioPlayer.onPositionChanged.listen((Duration p) {
+      setState(() {
+        position = p;
+      });
+    });
+
+    audioPlayer.onPlayerStateChanged.listen((PlayerState state) {
+      setState(() {
+        isPlaying = state == PlayerState.playing;
+      });
+    });
+
     audioPlayer.getCurrentPosition().then((Duration? p) {
       if (p != null) {
         setState(() {
@@ -55,12 +72,26 @@ class _DoaaPageState extends State<DoaaPage> {
     super.dispose();
   }
 
-  void togglePlayback() {
+  Future<void> togglePlayback() async {
     if (isPlaying) {
-      audioPlayer.pause();
+      await audioPlayer.pause();
     } else {
-      audioPlayer.play(AssetSource(prayers[currentPrayerIndex]));
+      await audioPlayer
+          .setPlaybackRate(playbackRates[currentPlaybackRateIndex]);
+      await audioPlayer.play(AssetSource(prayers[currentPrayerIndex]));
     }
+  }
+
+  Future<void> changePlaybackRate(int index) async {
+    currentPlaybackRateIndex = index;
+    if (isPlaying) {
+      await audioPlayer
+          .setPlaybackRate(playbackRates[currentPlaybackRateIndex]);
+    }
+  }
+
+  String getPlaybackRateText() {
+    return '${playbackRates[currentPlaybackRateIndex]}x'; // Get the current playback rate text
   }
 
   void playNextPrayer() {
@@ -117,7 +148,35 @@ class _DoaaPageState extends State<DoaaPage> {
             ),
           ),
           Text(
-            '${position.inMinutes}:${position.inSeconds.remainder(60)} / ${duration.inMinutes}:${duration.inSeconds.remainder(60)}',
+            '${(position.inMinutes).toString().padLeft(2, '0')}:${(position.inSeconds.remainder(60)).toString().padLeft(2, '0')} / ${(duration.inMinutes).toString().padLeft(2, '0')}:${(duration.inSeconds.remainder(60)).toString().padLeft(2, '0')}',
+          ),
+          Slider(
+            min: 0,
+            max: duration.inSeconds.toDouble(),
+            value: position.inSeconds.toDouble(),
+            onChanged: (value) {
+              setState(() {
+                audioPlayer.seek(Duration(seconds: value.toInt()));
+              });
+            },
+          ),
+          ListTile(
+            title: const Text('Playback Speed'),
+            trailing: PopupMenuButton<int>(
+              icon: const Icon(Icons.speed),
+              itemBuilder: (context) => List.generate(
+                playbackRates.length,
+                (index) => PopupMenuItem<int>(
+                  value: index,
+                  child: Text('${playbackRates[index]}x'),
+                ),
+              ),
+              onSelected: (index) {
+                setState(() {
+                  changePlaybackRate(index);
+                });
+              },
+            ),
           ),
           Container(
             color: Colors.brown,
@@ -135,7 +194,9 @@ class _DoaaPageState extends State<DoaaPage> {
                       : null,
                 ),
                 IconButton(
-                  icon: isPlaying ? Icon(Icons.pause) : Icon(Icons.play_arrow),
+                  icon: isPlaying
+                      ? const Icon(Icons.pause)
+                      : const Icon(Icons.play_arrow),
                   onPressed: togglePlayback,
                 ),
                 IconButton(

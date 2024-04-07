@@ -9,10 +9,10 @@ void main() async {
   var delegate = await LocalizationDelegate.create(
     fallbackLocale: 'en_US',
     supportedLocales: ['en_US', 'ru', 'ar'],
-    basePath: 'assets/tra',
+    basePath: 'assets/json/',
   );
 
-  runApp(LocalizedApp(delegate, MyApp()));
+  runApp(LocalizedApp(delegate, const MyApp()));
 }
 
 class MyApp extends StatelessWidget {

@@ -1,0 +1,56 @@
+{
+  "plural": {
+    "language_selection": {
+      "title": "اختر اللغة"
+    },
+    "horizontal_list": {
+      "adeia": "دعاء",
+      "tasbih": "تسبيح",
+      "allah names": "أسماء الله",
+      "salah": "الصلاة"
+    },
+    "doaa_page": {
+      "title": "الدعاء",
+      "doaa_1": "الدعاء 1",
+      "doaa_2": "الدعاء 2",
+      "doaa_3": "الدعاء 3",
+      "doaa_4": "الدعاء 4",
+      "doaa_5": "الدعاء 5",
+      "doaa_6": "الدعاء 6",
+      "doaa_7": "الدعاء 7"
+    },
+    "tasbih_page" : {
+      "appBarTitle": "التسبيح",
+    "backButton": "رجوع",
+    "tasbehCount": "عدد التسبيح",
+    "normalCount": "العد العادي",
+    "round": "الدورة",
+    "resetButton": "إعادة تعيين",
+    "tasbeh": "التسبيح",
+    "randomColorText": "لون عشوائي"
+    },
+    "allah_names_page": {
+      "appBarTitle": "أسماء الله الحسنى",
+      "backButton": "رجوع"
+    },
+    "salah_page" : {
+      "appBarTitle": "الصلاة",
+      "hijri Date" : "التاريخ الهجري",
+      "current Salah" : "الصلاة الحالية",
+      "Next Salah" : "الصلاة القادمة",
+      "time to next Salah is" : "الوقت المتبقي للصلاة القادمة",
+      "hijri Month Length" : "طول الشهر الهجري"
+    },
+    "salah_list" : {
+      "Al_Fajr" : "الفجر",
+      "Sunrise" : "شروق الشمس",
+      "Aduher" : "الظهر",
+      "Asr" : "العصر",
+      "Maghreb" : "المغرب",
+      "Eshaa" : "العشاء"
+    },
+    "splash_Screen" : {
+      "Muslim App" : "تطبيق المسلم"
+    }
+  }
+}
