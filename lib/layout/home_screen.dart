@@ -1,35 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:muslimapp/models/horizontal_list.dart';
-import 'package:muslimapp/models/languageScreen.dart'; // Assuming the name of the language selection page is LanguageSelectorPage
+import 'package:muslimapp/models/navigation_screen.dart';
+import 'package:flutter_translate/flutter_translate.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  bool _hideRail = true;
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: Stack(
-          children: [
-            Container(
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/tra/home.jpeg'),
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-            Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  HorizontalListButtons(),
-                ],
-              ),
-            ),
-          ],
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(translate('plural.home.home_page')),
+        leading: IconButton(
+          icon: Icon(_hideRail ? Icons.visibility : Icons.visibility_off),
+          onPressed: () {
+            setState(() {
+              _hideRail = !_hideRail; // Toggle the hideRail state
+            });
+          },
         ),
       ),
+      body: MyNavigationRail(hideRail: _hideRail),
     );
   }
 }

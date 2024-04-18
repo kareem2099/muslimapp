@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:muslimapp/models/salah_list.dart';
 import 'dart:async';
 import 'package:hijri/hijri_calendar.dart';
@@ -96,7 +97,7 @@ class _SalahWidgetState extends State<SalahWidget> {
       return '${hours.toString().padLeft(2, '0')}:${minutes.toString().padLeft(2, '0')}:${seconds.toString().padLeft(2, '0')}';
     } else {
       final difference =
-          nextSalahTimeParsed.difference(DateTime.now()).inSeconds;
+          nextSalahTimeParsed.difference(currentTimeParsed).inSeconds;
 
       final totalSeconds = difference >= 0
           ? difference
@@ -142,9 +143,13 @@ class _SalahWidgetState extends State<SalahWidget> {
 
   @override
   Widget build(BuildContext context) {
+    // Get the current Salah and next Salah
+    final currentSalah = currentPrayer ?? 'Loading...';
+    final nextSalah = getNextSalah();
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Salah'),
+        title: Text(translate('plural.salah_page.appBarTitle')),
         backgroundColor: Colors.teal,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
@@ -169,7 +174,7 @@ class _SalahWidgetState extends State<SalahWidget> {
           const SizedBox(height: 15),
           Text(
             '${translate('plural.salah_page.hijri Date')}: ${_today.toFormat("MMMM dd yyyy")}', // Display Hijri date
-            style: TextStyle(
+            style: const TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 20,
               color: Colors.black,
@@ -177,7 +182,7 @@ class _SalahWidgetState extends State<SalahWidget> {
           ),
           const SizedBox(height: 15),
           Text(
-            '${translate('plural.salah_page.current Salah')}: ${currentPrayer ?? 'Loading...'}',
+            '${translate('plural.salah_page.current Salah')}: $currentSalah', // Display current Salah
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 20,
@@ -186,8 +191,8 @@ class _SalahWidgetState extends State<SalahWidget> {
           ),
           const SizedBox(height: 15),
           Text(
-            '${translate('plural.salah_page.Next Salah')}: ${getNextSalah()}',
-            style: TextStyle(
+            '${translate('plural.salah_page.Next Salah')}: $nextSalah', // Display next Salah
+            style: const TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 20,
               color: Colors.black,
@@ -222,7 +227,7 @@ class _SalahWidgetState extends State<SalahWidget> {
                               : Colors.white,
                         ),
                       ),
-                      SizedBox(height: 2),
+                      const SizedBox(height: 2),
                       Text(
                         salah['salahTime']!,
                         style: TextStyle(
@@ -241,8 +246,8 @@ class _SalahWidgetState extends State<SalahWidget> {
           ),
           const SizedBox(height: 15),
           Container(
-            margin: EdgeInsets.all(10),
-            padding: EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
               color: Colors.teal, // Background color for the box
               borderRadius: BorderRadius.circular(8.0), // Rounded corners
@@ -250,7 +255,7 @@ class _SalahWidgetState extends State<SalahWidget> {
             ),
             child: Text(
               '${translate('plural.salah_page.time to next Salah is')}:\n$timeToNextSalah',
-              style: TextStyle(
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 16,
                 color: Colors.white,
@@ -260,7 +265,7 @@ class _SalahWidgetState extends State<SalahWidget> {
           const SizedBox(height: 70),
           Text(
             "${translate('plural.salah_page.hijri Month Length')}: ${hDate.lengthOfMonth}", // Display Hijri month length
-            style: TextStyle(
+            style: const TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 20,
               color: Colors.black,

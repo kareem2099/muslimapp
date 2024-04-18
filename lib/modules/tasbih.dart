@@ -165,7 +165,7 @@ class _TasbihState extends State<Tasbih> {
                     _buttonColor, // Use the variable to set the color
                 child: Text(
                   translate('plural.tasbih_page.tasbeh'),
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
                     color: Colors.black,

@@ -19,7 +19,7 @@ class _AllahNamesGridState extends State<AllahNamesGrid> {
   TextEditingController searchController = TextEditingController();
   List<String> filteredNames = []; // Initial list set to Arabic names
   final AllahNamesSearchDelegate delegate = AllahNamesSearchDelegate(
-    allNames: allArabicNames,
+    allNames: allNames,
     filterCallback: (String query) {
       // Define your filter logic here
     },
@@ -27,7 +27,7 @@ class _AllahNamesGridState extends State<AllahNamesGrid> {
 
   @override
   void initState() {
-    filteredNames = allArabicNames;
+    filteredNames = allNames;
     super.initState();
   }
 
@@ -60,7 +60,7 @@ class _AllahNamesGridState extends State<AllahNamesGrid> {
               icon: const Icon(Icons.close),
               onPressed: () {
                 setState(() {
-                  filteredNames = allArabicNames;
+                  filteredNames = allNames;
                   isContainerVisible = false;
                   currentMeaning = '';
                 });

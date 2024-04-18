@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
           builder: (context) =>
-              LanguageSelectionPage(), // Replace with your desired screen
+              const LanguageSelectionPage(), // Replace with your desired screen
         ),
       );
     });
@@ -34,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'assets/tra/Animation.gif',
+              'assets/images/Animation.gif',
               width: 200, // Adjust width as needed
               height: 200, // Adjust height as needed
             ),

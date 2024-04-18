@@ -3,6 +3,7 @@ import 'package:flutter_translate/flutter_translate.dart';
 import 'package:muslimapp/layout/home_screen.dart';
 
 class LanguageSelectionPage extends StatelessWidget {
+  const LanguageSelectionPage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,7 +13,7 @@ class LanguageSelectionPage extends StatelessWidget {
       body: ListView(
         children: [
           ListTile(
-            title: Text('English'),
+            title: const Text('English'),
             onTap: () {
               changeLocale(context, 'en_US');
               Navigator.pushReplacement(
@@ -22,7 +23,7 @@ class LanguageSelectionPage extends StatelessWidget {
             },
           ),
           ListTile(
-            title: Text('العربية'),
+            title: const Text('العربية'),
             onTap: () {
               changeLocale(context, 'ar');
               Navigator.pushReplacement(
@@ -32,7 +33,7 @@ class LanguageSelectionPage extends StatelessWidget {
             },
           ),
           ListTile(
-            title: Text('русский'),
+            title: const Text('русский'),
             onTap: () {
               changeLocale(context, 'ru');
               Navigator.pushReplacement(

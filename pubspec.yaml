@@ -7,6 +7,8 @@ environment:
   sdk: ">=3.3.0 <4.0.0"
 
 dependencies:
+  awesome_notifications_core: ^0.9.0 # <~ always ensure to use the  latest version
+  awesome_notifications: any # <~ this version is managed by awesome_notifications_core package
   flutter:
     sdk: flutter
   audioplayers: ^6.0.0
@@ -19,6 +21,12 @@ dependencies:
   hijri: ^3.0.0
   flutter_translate: ^4.0.4
   flutter_localization: ^0.2.0
+  flutter_islamic_icons: ^1.0.2
+  animated_rail: ^2.0.2
+  custom_circular_progress: ^1.0.1
+  quran: ^1.2.5
+  page_transition: ^2.0.9
+  google_fonts: ^6.2.1
   
 
 
@@ -26,6 +34,15 @@ dependencies:
 
 
 dev_dependencies:
+  flutter_launcher_icons: "^0.13.1"
+  build_runner: ^2.3.3
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/ramadan.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.2
@@ -33,13 +50,18 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-   - assets/tra/
-   - assets/
+   - assets/json/
+   - assets/audios/
+   - assets/images/
    - android/app/src/main/res/
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: quranFont
+      fonts:
+        - asset: assets/fonts/QuranSurah01-w1yO6.ttf
+        - asset: assets/fonts/QuranSurah02-d9lVZ.ttf
+        - asset: assets/fonts/QuranSurah1-mLKO5.ttf
+        - asset: assets/fonts/QuranSurah2-7Bov4.ttf
+        
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

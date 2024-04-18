@@ -2,17 +2,16 @@ import 'package:flutter/cupertino.dart'; // Import CupertinoLocalizations
 import 'package:flutter/material.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-
 import 'package:muslimapp/modules/splash_screen.dart';
 
 void main() async {
   var delegate = await LocalizationDelegate.create(
     fallbackLocale: 'en_US',
     supportedLocales: ['en_US', 'ru', 'ar'],
-    basePath: 'assets/tra',
+    basePath: 'assets/json/',
   );
 
-  runApp(LocalizedApp(delegate, MyApp()));
+  runApp(LocalizedApp(delegate, const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
