@@ -9,6 +9,11 @@
       "allah names": "Names of Allah",
       "salah": "Salah"
     },
+   "home" : {
+  "home_page": "Home Page",
+  "quiz": "Quiz",
+  "holy_quran": "Holy Quran"
+},
     "doaa_page": {
       "title": "Doaa",
       "doaa_1": "Doaa 1",
@@ -19,6 +24,12 @@
       "doaa_6": "Doaa 6",
       "doaa_7": "Doaa 7"
     },
+   "quran" : {
+  "surah_name": "Surah Name",
+  "number": "Number",
+  "number_of_verses": "Number of Verses",
+  "revelation_type": "Revelation Type"
+},
     "tasbih_page" : {
     "appBarTitle": "Tasbih",
     "backButton": "Back",
@@ -51,6 +62,916 @@
     },
     "splash_Screen" : {
       "Muslim App" : "Muslim App"
+    },
+    "allah_names_list" : {
+      "name_1" : "AR-Rahmaan",
+      "name_2" : "AR-Raheem",
+      "name_3" : "Al-Malik",
+      "name_4" : "Al-Quddus",
+      "name_5" : "AS-Salaam",
+      "name_6" : "Al-Mu'min",
+      "name_7" : "Al-Muhaymin",
+      "name_8" : "Al-Aziz",
+      "name_9" : "Al-Jabbar",
+      "name_10" : "Al-Mutakabbir",
+      "name_11" : "Al-Khaliq",
+      "name_12" : "Al-Bari",
+      "name_13" : "Al-Musawwir",
+      "name_14" : "Al-Ghaffar",
+      "name_15" : "Al-Qahhar",
+      "name_16" : "Al-Wahhab",
+      "name_17" : "Ar-Razzaq",
+      "name_18" : "Al-Fattah",
+      "name_19" : "Al-'Alim",
+      "name_20" : "Al-Qabid",
+      "name_21" : "Al-Basit",
+      "name_22" : "Al-Khafid",
+      "name_23" : "Ar-Rafi",
+      "name_24" : "Al-Mu'izz",
+      "name_25" : "Al-Mudhill",
+      "name_26" : "As-Sami",
+      "name_27" : "Al-Basir",
+      "name_28" : "Al-Hakam",
+      "name_29" : "Al-'Adl",
+      "name_30" : "Al-Latif",
+      "name_31" : "Al-Khabir",
+      "name_32" : "Al-Halim",
+      "name_33" : "Al-Azim",
+      "name_34" : "Al-Ghafur",
+      "name_35" : "Ash-Shakur",
+      "name_36" : "Al-Ali",
+      "name_37" : "Al-Kabir",
+      "name_38" : "Al-Hafiz",
+      "name_39" : "Al-Muqit",
+      "name_40" : "Al-Hasib",
+      "name_41" : "Al-Jalil",
+      "name_42" : "Al-Karim",
+      "name_43" : "Ar-Raqib",
+      "name_44" : "Al-Mujib",
+      "name_45" : "Al-Wasi",
+      "name_46" : "Al-Hakim",
+      "name_47" : "Al-Wadud",
+      "name_48" : "Al-Majid",
+      "name_49" : "Al-Ba'ith",
+      "name_50" : "Ash-Shahid",
+      "name_51" : "Al-Haqq",
+      "name_52" : "Al-Wakil",
+      "name_53" : "Al-Qawiyy",
+      "name_54" : "Al-Matin",
+      "name_55" : "Al-Wali",
+      "name_56" : "Al-Hamid",
+      "name_57" : "Al-Muhsi",
+      "name_58" : "Al-Mubdi",
+      "name_59" : "Al-Mu'id",
+      "name_60" : "Al-Muhyi",
+      "name_61" : "Al-Mumit",
+      "name_62" : "Al-Hayy",
+      "name_63" : "Al-Qayyum",
+      "name_64" : "Al-Wajid",
+      "name_65" : "Al-Majid",
+      "name_66" : "Al-Wahid",
+      "name_67" : "Al-Ahad",
+      "name_68" : "As-Samad",
+      "name_69" : "Al-Qadir",
+      "name_70" : "Al-Muqtadir",
+      "name_71" : "Al-Muqaddim",
+      "name_72" : "Al-Mu'akhkhir",
+      "name_73" : "Al-Awwa",
+      "name_74" : "Al-Akhir",
+      "name_75" : "Az-Zahir",
+      "name_76" : "Al-Batin",
+      "name_77" : "Al-Wali",
+      "name_78" : "Al-Muta'ali",
+      "name_79" : "Al-Barr",
+      "name_80" : "At-Tawwab",
+      "name_81" : "Al-Muntaqim",
+      "name_82" : "Al-'Afuww",
+      "name_83" : "Ar-Ra'uf",
+      "name_84" : "Malik-ul-Mulk",
+      "name_85" : "Dhu-al-Jalal wa al-Ikram",
+      "name_86" : "Al-Muqsit",
+      "name_87" : "Al-Jami'",
+      "name_88" : "Al-Ghaniyy",
+      "name_89" : " Al-Mughni",
+      "name_90" : "Al-Mani’",
+      "name_91" : "Adh-Dharr",
+      "name_92" : "An-Nafi’",
+      "name_93" : "An-Nur",
+      "name_94" : "Al-Hadi",
+      "name_95" : "Al-Badee'",
+      "name_96" : "Al-Baqi",
+      "name_97" : "Al-Warith",
+      "name_98" : "Ar-Rashid",
+      "name_99" : "As-Sabur"
+    },
+    "allahNamesMeaning" : {
+  "Meaning 1": "Wide in mercy for His creation, believers and disbelievers alike",
+  "Meaning 2": "The giver of reward manifold for good deeds",
+  "Meaning 3": "The sovereign who does whatever He wills with His dominion",
+  "Meaning 4": "Transcendent beyond any description that human senses or imagination can perceive",
+  "Meaning 5": "Free from any imperfection, flaw, or deficiency, and His peace encompasses His creation",
+  "Meaning 6": "The verifier of Himself, His scriptures, and His messengers, in what they have said about Him",
+  "Meaning 7": "The controller of all things with His perfect and absolute power",
+  "Meaning 8": "The dominant one with no equal",
+  "Meaning 9": "The executor of His will by compulsion and decree",
+  "Meaning 10": "The one who determines benefit and its owner",
+  "Meaning 11": "The guide, the right, who guides and enlightens the hearts of the sincere with His oneness",
+  "Meaning 12": "The one who created everything and then guided, the clear one in showing the path of truth",
+  "Meaning 13": "There is none like Him in His attributes, actions, judgments, or in any matter of His affairs",
+  "Meaning 14": "The eternal existence described by everlastingness",
+  "Meaning 15": "To whom belongs whatever is in the heavens and the earth, the Lord of everything, its inheritor, its provider, and its mercy",
+  "Meaning 16": "The guide of those who obey, so He guides whomever He wills by His guidance and leads astray whomever He wills by His abandonment",
+  "Meaning 17": "The one who grants respite and watches, who does not hasten, who does not delay, who does not rush, and the matter is decreed according to a known measure",
+  "Meaning 18": "The wide-reaching in mercy and sustenance",
+  "Meaning 19": "The source of peace and perfection",
+  "Meaning 20": "The guardian of truth and justice",
+  "Meaning 21": "The giver of gifts and bounties",
+  "Meaning 22": "The all-pervading, the sustainer of all",
+  "Meaning 23": "The bestower of honor and dignity",
+  "Meaning 24": "The source of peace and safety",
+  "Meaning 25": "The preserver of security and faith",
+  "Meaning 26": "The perfect in strength",
+  "Meaning 27": "The strong in majesty",
+  "Meaning 28": "The strong in power",
+  "Meaning 29": "The guardian of the faith",
+  "Meaning 30": "The guardian of the righteous",
+  "Meaning 31": "The guardian of the unguarded",
+  "Meaning 32": "The source of truth and guidance",
+  "Meaning 33": "The giver of light and illumination",
+  "Meaning 34": "The giver of guidance and wisdom",
+  "Meaning 35": "The guide to the right path",
+  "Meaning 36": "The guide to righteousness",
+  "Meaning 37": "The guide to success",
+  "Meaning 38": "The guide to salvation",
+  "Meaning 39": "The guide to felicity",
+  "Meaning 40": "The guide to happiness",
+  "Meaning 41": "The guide to bliss",
+  "Meaning 42": "The guide to paradise",
+  "Meaning 43": "The guide to eternal life",
+  "Meaning 44": "The guide to the hereafter",
+  "Meaning 45": "The guide to the path of truth",
+  "Meaning 46": "The guide to the straight path",
+  "Meaning 47": "The guide to the way of righteousness",
+  "Meaning 48": "The guide to the way of salvation",
+  "Meaning 49": "The guide to the way of happiness",
+  "Meaning 50": "The guide to the way of bliss",
+  "Meaning 51": "The guide to the way of paradise",
+  "Meaning 52": "The guide to the way of eternal life",
+  "Meaning 53": "The guide to the way of the hereafter",
+  "Meaning 54": "The guide to the way of success",
+  "Meaning 55": "The guide to the way of felicity",
+  "Meaning 56": "The guide to the way of light",
+  "Meaning 57": "The guide to the way of illumination",
+  "Meaning 58": "The guide to the way of wisdom",
+  "Meaning 59": "The guide to the way of knowledge",
+  "Meaning 60": "The guide to the way of understanding",
+  "Meaning 61": "The guide to the way of insight",
+  "Meaning 62": "The guide to the way of enlightenment",
+  "Meaning 63": "The guide to the way of consciousness",
+  "Meaning 64": "The guide to the way of awareness",
+  "Meaning 65": "The guide to the way of mindfulness",
+  "Meaning 66": "The guide to the way of perception",
+  "Meaning 67": "The guide to the way of discernment",
+  "Meaning 68": "The guide to the way of judgment",
+  "Meaning 69": "The guide to the way of discernment",
+  "Meaning 70": "The guide to the way of understanding",
+  "Meaning 71": "The guide to the way of enlightenment",
+  "Meaning 72": "The guide to the way of consciousness",
+  "Meaning 73": "The guide to the way of awareness",
+  "Meaning 74": "The guide to the way of mindfulness",
+  "Meaning 75": "The guide to the way of perception",
+  "Meaning 76": "The guide to the way of discernment",
+  "Meaning 77": "The guide to the way of judgment",
+  "Meaning 78": "The guide to the way of discernment",
+  "Meaning 79": "The guide to the way of understanding",
+  "Meaning 80": "The guide to the way of enlightenment",
+  "Meaning 81": "The guide to the way of consciousness",
+  "Meaning 82": "The guide to the way of awareness",
+  "Meaning 83": "The guide to the way of mindfulness",
+  "Meaning 84": "The guide to the way of perception",
+  "Meaning 85": "The guide to the way of discernment",
+  "Meaning 86": "The guide to the way of judgment",
+  "Meaning 87": "The guide to the way of discernment",
+  "Meaning 88": "The guide to the way of understanding",
+  "Meaning 89": "The guide to the way of enlightenment",
+  "Meaning 90": "The guide to the way of consciousness",
+  "Meaning 91": "The guide to the way of awareness",
+  "Meaning 92": "The guide to the way of mindfulness",
+  "Meaning 93": "The guide to the way of perception",
+  "Meaning 94": "The guide to the way of discernment",
+  "Meaning 95": "The guide to the way of judgment",
+  "Meaning 96": "The guide to the way of discernment",
+  "Meaning 97": "The guide to the way of understanding",
+  "Meaning 98": "The guide to the way of enlightenment",
+  "Meaning 99": "The guide to the way of consciousness"
+  },
+  "surahs": {
+  "appBarTitle" : "Holy Quran",
+  "name_1": "The Opening",
+  "verses_1": "7",
+  "revelationType_1": "Meccan",
+  "name_2": "The Cow",
+  "verses_2": "286",
+  "revelationType_2": "Medinan",
+  "name_3": "The Family of Imran",
+  "verses_3": "200",
+  "revelationType_3": "Medinan",
+  "name_4": "The Women",
+  "verses_4": "176",
+  "revelationType_4": "Medinan",
+  "name_5": "The Table Spread",
+  "verses_5": "120",
+  "revelationType_5": "Medinan",
+  "name_6": "The Cattle",
+  "verses_6": "165",
+  "revelationType_6": "Meccan",
+  "name_7": "The Heights",
+  "verses_7": "206",
+  "revelationType_7": "Meccan",
+  "name_8": "The Spoils of War",
+  "verses_8": "75",
+  "revelationType_8": "Medinan",
+  "name_9": "The Repentance",
+  "verses_9": "129",
+  "revelationType_9": "Medinan",
+  "name_10": "Jonah",
+  "verses_10": "109",
+  "revelationType_10": "Meccan",
+  "name_11": "Hud",
+  "verses_11": "123",
+  "revelationType_11": "Meccan",
+  "name_12": "Joseph",
+  "verses_12": "111",
+  "revelationType_12": "Meccan",
+  "name_13": "The Thunder",
+  "verses_13": "43",
+  "revelationType_13": "Medinan",
+  "name_14": "Abraham",
+  "verses_14": "52",
+  "revelationType_14": "Meccan",
+  "name_15": "The Rock",
+  "verses_15": "99",
+  "revelationType_15": "Meccan",
+  "name_16": "The Bee",
+  "verses_16": "128",
+  "revelationType_16": "Meccan",
+  "name_17": "The Night Journey",
+  "verses_17": "111",
+  "revelationType_17": "Meccan",
+  "name_18": "The Cave",
+  "verses_18": "110",
+  "revelationType_18": "Meccan",
+  "name_19": "Mary",
+  "verses_19": "98",
+  "revelationType_19": "Meccan",
+  "name_20": "Ta-Ha",
+  "verses_20": "135",
+  "revelationType_20": "Meccan",
+  "name_21": "The Prophets",
+  "verses_21": "112",
+  "revelationType_21": "Meccan",
+  "name_22": "The Pilgrimage",
+  "verses_22": "78",
+  "revelationType_22": "Medinan",
+  "name_23": "The Believers",
+  "verses_23": "118",
+  "revelationType_23": "Meccan",
+  "name_24": "The Light",
+  "verses_24": "64",
+  "revelationType_24": "Medinan",
+  "name_25": "The Criterion",
+  "verses_25": "77",
+  "revelationType_25": "Meccan",
+  "name_26": "The Poets",
+  "verses_26": "227",
+  "revelationType_26": "Meccan",
+  "name_27": "The Ant",
+  "verses_27": "93",
+  "revelationType_27": "Meccan",
+  "name_28": "The Stories",
+  "verses_28": "88",
+  "revelationType_28": "Meccan",
+  "name_29": "The Spider",
+  "verses_29": "69",
+  "revelationType_29": "Meccan",
+  "name_30": "The Romans",
+  "verses_30": "60",
+  "revelationType_30": "Meccan",
+  "name_31": "Luqman",
+  "verses_31": "34",
+  "revelationType_31": "Meccan",
+  "name_32": "The Prostration",
+  "verses_32": "30",
+  "revelationType_32": "Meccan",
+  "name_33": "The Combined Forces",
+  "verses_33": "73",
+  "revelationType_33": "Medinan",
+  "name_34": "Sheba",
+  "verses_34": "54",
+  "revelationType_34": "Meccan",
+  "name_35": "The Originator",
+  "verses_35": "45",
+  "revelationType_35": "Meccan",
+  "name_36": "Ya-Sin",
+  "verses_36": "83",
+  "revelationType_36": "Meccan",
+  "name_37": "Those Who Set The Ranks",
+  "verses_37": "182",
+  "revelationType_37": "Meccan",
+  "name_38": "Sad",
+  "verses_38": "88",
+  "revelationType_38": "Meccan",
+  "name_39": "The Troops",
+  "verses_39": "75",
+  "revelationType_39": "Meccan",
+  "name_40": "The Forgiver",
+  "verses_40": "85",
+  "revelationType_40": "Meccan",
+  "name_41": "Explained in Detail",
+  "verses_41": "54",
+  "revelationType_41": "Meccan",
+  "name_42": "The Consultation",
+  "verses_42": "53",
+  "revelationType_42": "Medinan",
+  "name_43": "The Gold",
+  "verses_43": "89",
+  "revelationType_43": "Meccan",
+  "name_44": "The Smoke",
+  "verses_44":" 59",
+  "revelationType_44": "Meccan",
+  "name_45": "The Crouching",
+  "verses_45":" 37",
+  "revelationType_45": "Meccan",
+  "name_46": "The Wind-Curved Sandhills",
+  "verses_46":" 35",
+  "revelationType_46": "Meccan",
+  "name_47": "Muhammad",
+  "verses_47":" 38",
+  "revelationType_47": "Medinan",
+  "name_48": "The Victory",
+  "verses_48":" 29",
+  "revelationType_48": "Medinan",
+  "name_49": "The Rooms",
+  "verses_49":" 18",
+  "revelationType_49": "Medinan",
+  "name_50": "Qaf",
+  "verses_50":" 45",
+  "revelationType_50": "Meccan",
+  "name_51": "The Scatterers",
+  "verses_51":" 60",
+  "revelationType_51": "Meccan",
+  "name_52": "The Mount",
+  "verses_52":" 49",
+  "revelationType_52": "Meccan",
+  "name_53": "The Star",
+  "verses_53":" 62",
+  "revelationType_53": "Meccan",
+  "name_54": "The Moon",
+  "verses_54":" 55",
+  "revelationType_54": "Meccan",
+  "name_55": "The Beneficent",
+  "verses_55":" 78",
+  "revelationType_55": "Meccan",
+  "name_56": "The Inevitable",
+  "verses_56":" 96",
+  "revelationType_56": "Meccan",
+  "name_57": "The Iron",
+  "verses_57":" 29",
+  "revelationType_57": "Medinan",
+  "name_58": "The Pleading Woman",
+  "verses_58":" 22",
+  "revelationType_58": "Medinan",
+  "name_59": "The Exile",
+  "verses_59":" 24",
+  "revelationType_59": "Medinan",
+  "name_60": "She That Disputeth",
+  "verses_60":" 13",
+  "revelationType_60": "Medinan",
+  "name_61": "The Ranks",
+  "verses_61":" 14",
+  "revelationType_61": "Medinan",
+  "name_62": "The Congregation",
+  "verses_62":" 11",
+  "revelationType_62": "Medinan",
+  "name_63": "The Hypocrites",
+  "verses_63":" 11",
+  "revelationType_63": "Medinan",
+  "name_64": "The Mutual Disillusion",
+  "verses_64":" 18",
+  "revelationType_64": "Medinan",
+  "name_65": "The Divorce",
+  "verses_65":" 12",
+  "revelationType_65": "Medinan",
+  "name_66": "The Prohibition",
+  "verses_66":" 12",
+  "revelationType_66": "Medinan",
+  "name_67": "The Sovereignty",
+  "verses_67":" 30",
+  "revelationType_67": "Meccan",
+  "name_68": "The Pen",
+  "verses_68":" 52",
+  "revelationType_68": "Meccan",
+  "name_69": "The Reality",
+  "verses_69":" 52",
+  "revelationType_69": "Meccan",
+  "name_70": "The Ascending Stairways",
+  "verses_70":" 44",
+  "revelationType_70": "Meccan",
+  "name_71": "Noah",
+  "verses_71":" 28",
+  "revelationType_71": "Meccan",
+  "name_72": "The Jinn",
+  "verses_72":" 28",
+  "revelationType_72": "Meccan",
+  "name_73": "The Enshrouded One",
+  "verses_73":" 20",
+  "revelationType_73": "Meccan",
+  "name_74": "The Cloaked One",
+  "verses_74":" 56",
+  "revelationType_74": "Meccan",
+  "name_75": "The Resurrection",
+  "verses_75":" 40",
+  "revelationType_75": "Meccan",
+  "name_76": "Man",
+  "verses_76":" 31",
+  "revelationType_76": "Meccan",
+  "name_77": "The Emissaries",
+  "verses_77":" 50",
+  "revelationType_77": "Meccan",
+  "name_78": "The Tidings",
+  "verses_78":" 40",
+  "revelationType_78": "Meccan",
+  "name_79": "Those Who Drag Forth",
+  "verses_79":" 46",
+  "revelationType_79": "Meccan",
+  "name_80": "He Frowned",
+  "verses_80":" 42",
+  "revelationType_80": "Meccan",
+  "name_81": "The Overthrowing",
+  "verses_81":" 29",
+  "revelationType_81": "Meccan",
+  "name_82": "The Cleaving",
+  "verses_82":" 19",
+  "revelationType_82": "Meccan",
+  "name_83": "Defrauding",
+  "verses_83":" 36",
+  "revelationType_83": "Meccan",
+  "name_84": "The Splitting Open",
+  "verses_84":" 25",
+  "revelationType_84": "Meccan",
+  "name_85": "The Constellations",
+  "verses_85":" 22",
+  "revelationType_85": "Meccan",
+  "name_86": "The Morning Star",
+  "verses_86":" 17",
+  "revelationType_86": "Meccan",
+  "name_87": "The Most High",
+  "verses_87":" 19",
+  "revelationType_87": "Meccan",
+  "name_88": "The Overwhelming",
+  "verses_88":" 26",
+  "revelationType_88": "Meccan",
+  "name_89": "The Dawn",
+  "verses_89":" 30",
+  "revelationType_89": "Meccan",
+  "name_90": "The City",
+  "verses_90":" 20",
+  "revelationType_90": "Meccan",
+  "name_91": "The Sun",
+  "verses_91":" 15",
+  "revelationType_91": "Meccan",
+  "name_92": "The Night",
+  "verses_92":" 21",
+  "revelationType_92": "Meccan",
+  "name_93": "The Morning Hours",
+  "verses_93":" 11",
+  "revelationType_93": "Meccan",
+  "name_94": "The Relief",
+  "verses_94":" 8",
+  "revelationType_94": "Meccan",
+  "name_95": "The Fig",
+  "verses_95":" 8",
+  "revelationType_95": "Meccan",
+  "name_96": "The Clot",
+  "verses_96":" 19",
+  "revelationType_96": "Meccan",
+  "name_97": "The Power",
+  "verses_97":" 5",
+  "revelationType_97": "Meccan",
+  "name_98": "The Clear Proof",
+  "verses_98":" 8",
+  "revelationType_98": "Medinan",
+  "name_99": "The Earthquake",
+  "verses_99":" 8",
+  "revelationType_99": "Medinan",
+  "name_100": "The Courser",
+  "verses_100": "11",
+  "revelationType_100": "Meccan",
+  "name_101": "The Calamity",
+  "verses_101": "11",
+  "revelationType_101": "Meccan",
+  "name_102": "The Rivalry in Worldly Increase",
+  "verses_102": "8",
+  "revelationType_102": "Meccan",
+  "name_103": "The Declining Day",
+  "verses_103": "3",
+  "revelationType_103": "Meccan",
+  "name_104": "The Traducer",
+  "verses_104": "9",
+  "revelationType_104": "Meccan",
+  "name_105": "The Elephant",
+  "verses_105": "5",
+  "revelationType_105": "Meccan",
+  "name_106": "Quraish",
+  "verses_106": "4",
+  "revelationType_106": "Meccan",
+  "name_107": "The Small Kindnesses",
+  "verses_107": "7",
+  "revelationType_107": "Meccan",
+  "name_108": "The Abundance",
+  "verses_108": "3",
+  "revelationType_108": "Meccan",
+  "name_109": "The Disbelievers",
+  "verses_109": "6",
+  "revelationType_109": "Meccan",
+  "name_110": "The Divine Support",
+  "verses_110": "3",
+  "revelationType_110": "Medinan",
+  "name_111": "The Palm Fibre",
+  "verses_111": "5",
+  "revelationType_111": "Meccan",
+  "name_112": "The Sincerity",
+  "verses_112": "4",
+  "revelationType_112": "Meccan",
+  "name_113": "The Daybreak",
+  "verses_113": "5",
+  "revelationType_113": "Meccan",
+  "name_114": "Mankind",
+  "verses_114": "6",
+  "revelationType_114": "Meccan"
+  },
+
+  "easyQuestions": [
+    {
+      "score" : 10,
+      "number_1": 1,
+      "question": "Who was the first wife of Prophet Muhammad (peace be upon him)?",
+      "choices": ["Aisha", "Sawda", "Khadijah", "Hafsa"]
+    },
+    {
+      "score" : 10,
+      "number_2": 2,
+      "question": "What is the meaning of \"Sunnah\" in Islam?",
+      "choices": [
+        "The way of life prescribed as normative in Islam, based on the teachings and practices of the Prophet Muhammad and interpretations of the Quran.",
+        "The Quran",
+        "A type of prayer",
+        "The call to prayer"
+      ]
+    },
+    {
+      "score" : 10,
+      "number_3": 3,
+      "question": "What is the name of the Islamic declaration of faith?",
+      "choices": ["Salat", "Zakat", "Hajj", "Shahada"]
+    },
+    {
+      "score" : 10,
+      "number_4": 4,
+      "question": "What is the name of the night journey of Prophet Muhammad (peace be upon him) from Mecca to Jerusalem?",
+      "choices": ["Hijra", "Isra and Miraj", "Jumu-ah", "Laylat al-Qadr"]
+    },
+    {
+      "score" : 10,
+      "number_5": 5,
+      "question": "What is the term for giving charity in Islam?",
+      "choices": ["Zakat", "Sadaqah", "Khums", "Fitrana"]
+    },
+    {
+      "score" : 10,
+      "number_6": 6,
+      "question": "Which angel is responsible for delivering revelations to prophets?",
+      "choices": ["Israfil", "Mikail (Michael)", "Azrael", "Jibreel (Gabriel)"]
+    },
+    {
+      "score" : 10,
+      "number_7": 7,
+      "question": "What is the holy book of Islam?",
+      "choices": ["Hadith", "Torah", "Quran", "Bible"]
+    },
+    {
+      "score" : 10,
+      "number_8": 8,
+      "question": "What is the name of the month of fasting in Islam?",
+      "choices": ["Ramadan", "Shawwal", "Dhul-Hijjah", "Rabi al-Awwal"]
+    },
+    {
+      "score" : 10,
+      "number_9": 9,
+      "question": "What is the term for the pilgrimage to Mecca that is performed outside of the designated Hajj season?",
+      "choices": ["Istisqaa", "Umrah", "Hajj", "Tawaf"]
+    },
+    {
+      "score" : 10,
+      "number_10": 10,
+      "question": "Who is considered the first prophet in Islam?",
+      "choices": ["Moses", "Abraham", "Adam", "Noah"]
     }
-  }
+  ],
+  "mediumQuestions": [
+    {
+      "question": "What is the significance of the month of Ramadan in Islam?",
+      "choices": [
+        "It is the month in which the Quran was revealed",
+        "It marks the birth of Prophet Muhammad (peace be upon him)",
+        "It commemorates the Battle of Badr",
+        "It is the month of fasting and spiritual reflection"
+      ]
+    },
+    {
+      "question": "What is the name of the Islamic declaration of faith?",
+      "choices": ["Salat", "Zakat", "Hajj", "Shahada"]
+    },
+    {
+      "question": "What does \"Jihad\" mean in Islam?",
+      "choices": [
+        "Inner struggle or striving",
+        "Holy war against non-believers",
+        "Physical fighting",
+        "Pilgrimage to Mecca"
+      ]
+    },
+    {
+      "question": "What is the name of the night journey of Prophet Muhammad (peace be upon him) from Mecca to Jerusalem?",
+      "choices": ["Hijra", "Jumu-ah", "Laylat al-Qadr", "Isra and Miraj"]
+    },
+    {
+      "question": "What is the name of the pilgrimage to Mecca that Muslims perform at least once in their lifetime?",
+      "choices": ["Umrah", "Istisqaa", "Hajj", "Tawaf"]
+    },
+    {
+      "question": "Which Prophet is known as the \"Father of Prophets\"?",
+      "choices": [
+        "Prophet Adam (peace be upon him)",
+        "Prophet Noah (peace be upon him)",
+        "Prophet Abraham (peace be upon him)",
+        "Prophet Muhammad (peace be upon him)"
+      ]
+    },
+    {
+      "question": "What is the name of the angel who brought revelations to Prophet Muhammad (peace be upon him)?",
+      "choices": ["Gabriel", "Michael", "Israfil", "Azrael"]
+    },
+    {
+      "question": "What is the name of the holy book of Islam?",
+      "choices": ["Injeel", "Torah", "Quran", "Zabur"]
+    },
+    {
+      "question": "What is the Arabic term for charity or almsgiving?",
+      "choices": ["Zakat", "Sadaqah", "Khums", "Fitrah"]
+    },
+    {
+      "question": "In Islamic law, what is the punishment for theft?",
+      "choices": ["Flogging", "Imprisonment", "Fine", "Cutting off the hand"]
+    },
+    {
+      "question": "What is the name of the Islamic month of fasting?",
+      "choices": ["Shawwal", "Rajab", "Dhu al-Hijjah", "Ramadan"]
+    },
+    {
+      "question": "Who is the last Prophet in Islam?",
+      "choices": [
+        "Prophet Adam (peace be upon him)",
+        "Prophet Moses (peace be upon him)",
+        "Prophet Jesus (peace be upon him)",
+        "Prophet Muhammad (peace be upon him)"
+      ]
+    },
+    {
+      "question": "What is the first month of the Islamic calendar?",
+      "choices": ["Muharram", "Ramadan", "Shawwal", "Dhu al-Hijjah"]
+    },
+    {
+      "question": "What is the name of the angel of death in Islam?",
+      "choices": ["Azrael", "Israfil", "Gabriel", "Michael"]
+    },
+    {
+      "question": "What is the name of the Islamic pilgrimage to Medina?",
+      "choices": ["Hijra", "Jumu-ah", "Umrah", "Ziyarat"]
+    },
+    {
+      "question": "How many chapters (surahs) are there in the Quran?",
+      "choices": ["114", "100", "99", "120"]
+    },
+    {
+      "question": "What is the name of the Islamic month of pilgrimage?",
+      "choices": ["Rabi al-Awwal", "Dhu al-Hijjah", "Shawwal", "Rajab"]
+    },
+    {
+      "question": "Which city is considered the holiest in Islam?",
+      "choices": ["Mecca", "Medina", "Jerusalem", "Cairo"]
+    },
+    {
+      "question": "What is the name of the Islamic month of fasting?",
+      "choices": ["Shawwal", "Rajab", "Dhu al-Hijjah", "Ramadan"]
+    },
+    {
+      "question": "What is the name of the Islamic declaration of faith?",
+      "choices": ["Salat", "Zakat", "Hajj", "Shahada"]
+    }
+  ],
+  "hardQuestions": [
+    {
+             "question": "What is the name of the Islamic declaration of faith?",
+      "choices": ["Shahada", "Salat", "Zakat", "Hajj"]
+    },
+    {
+             "question": "What is the name of the night journey of Prophet Muhammad (peace be upon him) from Mecca to Jerusalem?",
+      "choices": ["Isra and Miraj", "Hijra", "Jumu-ah", "Laylat al-Qadr"]
+    },
+    {
+             "question": "Which companion of the Prophet (peace be upon him) was known as the \"Sword of Allah\"?",
+      "choices": ["Abu Bakr", "Umar ibn al-Khattab", "Ali ibn Abi Talib", "Khalid ibn al-Walid"]
+    },
+    {
+             "question": "What is the name of the wife of the Prophet Muhammad (peace be upon him) who was known as \"Mother of the Believers\"?",
+      "choices": ["Aisha", "Khadijah", "Sawda", "Hafsa"]
+    },
+    {
+             "question": "What is the name of the city where the Prophet Muhammad (peace be upon him) was born?",
+      "choices": ["Mecca", "Medina", "Jerusalem", "Taif"]
+    },
+    {
+             "question": "What is the name of the cave where the Prophet Muhammad (peace be upon him) received his first revelation?",
+      "choices": ["Hira", "Thawr", "Safa", "Mina"]
+    },
+    {
+             "question": "In which battle did the Muslims suffer a setback, known as the Battle of Uhud?",
+      "choices": ["Badr", "Khandaq", "Uhud", "Tabuk"]
+    },
+    {
+             "question": "What is the term for the pilgrimage made by Muslims to Mecca outside of the designated Hajj season?",
+      "choices": ["Umrah", "Hajj al-Badal", "Hajj", "Ihram"]
+    },
+    {
+             "question": "What is the name of the well in Mecca near the Kaaba, which is associated with the story of Hagar and Ishmael?",
+      "choices": ["Zamzam", "Safa", "Marwah", "Thawr"]
+    },
+    {
+       
+      "question": "What is the term for the practice of giving a fixed portion of one’s wealth to charity, obligatory for Muslims?",
+      "choices": ["Zakat", "Sadaqah", "Fitra", "Khums"]
+    },
+    {
+       
+      "question": "What is the name of the angel who delivered revelations from Allah to the Prophet Muhammad (peace be upon him)?",
+      "choices": ["Jibril (Gabriel)", "Israfil", "Mikail (Michael)", "Azrael"]
+    },
+    {
+       
+      "question": "Which battle marked the end of paganism in Arabia and led to the conquest of Mecca by the Muslims?",
+      "choices": ["Badr", "Khandaq", "Uhud", "Tabuk"]
+    },
+    {
+       
+      "question": "What is the term for the night of the 27th of Ramadan, considered the Night of Decree in Islam?",
+      "choices": ["Laylat al-Baraat", "Laylat al-Qadr", "Laylat al-Mi’raj", "Laylat al-Isra"]
+    },
+    {
+       
+      "question": "Who was the first caliph (successor) of the Prophet Muhammad (peace be upon him)?",
+      "choices": ["Abu Bakr", "Umar", "Uthman", "Ali"]
+    },
+    {
+       
+      "question": "What is the term for the pilgrimage to Mecca that Muslims perform at least once in their lifetime?",
+      "choices": ["Hajj", "Umrah", "Istisqaa", "Tawaf"]
+    },
+    {
+       
+      "question": "What is the name of the Islamic month of fasting?",
+      "choices": ["Ramadan", "Shawwal", "Muharram", "Dhu al-Hijjah"]
+    },
+    {
+       
+      "question": "What is the term for the struggle or striving in the way of Allah?",
+      "choices": ["Hijra", "Hijab", "Jihad", "Halal"]
+    },
+    {
+       
+      "question": "What is the name of the treaty that was signed between the Muslims of Medina and the tribes of Mecca?",
+      "choices": ["Treaty of Hudaybiyyah", "Treaty of Aqaba", "Treaty of Hudaibiya", "Treaty of Badr"]
+    },
+    {
+       
+      "question": "What is the term for the formal prayer observed by Muslims five times a day?",
+      "choices": ["Salat", "Sawm", "Zakat", "Hajj"]
+    },
+    {
+       
+      "question": "What is the name of the Islamic law derived from the Quran and the Hadith?",
+      "choices": ["Shariah", "Sunni", "Hadith", "Fiqh"]
+    },
+    {
+       
+      "question": "In Islam, what is the term for the direction of the Kaaba in Mecca that Muslims face while praying?",
+      "choices": ["Qiblah", "Mihrab", "Sujood", "Tawaf"]
+    },
+    {
+       
+      "question": "What is the name of the Islamic declaration of faith?",
+      "choices": ["Shahada", "Salat", "Zakat", "Hajj"]
+    },
+    {
+       
+      "question": "What is the name of the night journey of Prophet Muhammad (peace be upon him) from Mecca to Jerusalem?",
+      "choices": ["Isra and Miraj", "Hijra", "Jumu-ah", "Laylat al-Qadr"]
+    },
+    {
+       
+      "question": "Which companion of the Prophet (peace be upon him) was known as the \"Sword of Allah\"?",
+      "choices": ["Abu Bakr", "Umar ibn al-Khattab", "Ali ibn Abi Talib", "Khalid ibn al-Walid"]
+    },
+    {
+       
+      "question": "What is the name of the wife of the Prophet Muhammad (peace be upon him) who was known as \"Mother of the Believers\"?",
+      "choices": ["Aisha", "Khadijah", "Sawda", "Hafsa"]
+    },
+    {
+       
+      "question": "What is the name of the city where the Prophet Muhammad (peace be upon him) was born?",
+      "choices": ["Mecca", "Medina", "Jerusalem", "Taif"]
+    },
+    {
+       
+      "question": "What is the name of the cave where the Prophet Muhammad (peace be upon him) received his first revelation?",
+      "choices": ["Hira", "Thawr", "Safa", "Mina"]
+    },
+    {
+       
+      "question": "In which battle did the Muslims suffer a setback, known as the Battle of Uhud?",
+      "choices": ["Badr", "Khandaq", "Uhud", "Tabuk"]
+    },
+    {
+       
+      "question": "What is the term for the pilgrimage made by Muslims to Mecca outside of the designated Hajj season?",
+      "choices": ["Umrah", "Hajj al-Badal", "Hajj", "Ihram"]
+    },
+    {
+       
+      "question": "What is the name of the well in Mecca near the Kaaba, which is associated with the story of Hagar and Ishmael?",
+      "choices": ["Zamzam", "Safa", "Marwah", "Thawr"]
+    },
+    {
+       
+      "question": "What is the term for the practice of giving a fixed portion of one’s wealth to charity, obligatory for Muslims?",
+      "choices": ["Zakat", "Sadaqah", "Fitra", "Khums"]
+    },
+    {
+       
+      "question": "What is the name of the angel who delivered revelations from Allah to the Prophet Muhammad (peace be upon him)?",
+      "choices": ["Jibril (Gabriel)", "Israfil", "Mikail (Michael)", "Azrael"]
+    },
+    {
+       
+      "question": "Which battle marked the end of paganism in Arabia and led to the conquest of Mecca by the Muslims?",
+      "choices": ["Badr", "Khandaq", "Uhud", "Tabuk"]
+    },
+    {
+       
+      "question": "What is the term for the night of the 27th of Ramadan, considered the Night of Decree in Islam?",
+      "choices": ["Laylat al-Baraat", "Laylat al-Qadr", "Laylat al-Mi’raj", "Laylat al-Isra"]
+    },
+    {
+       
+      "question": "Who was the first caliph (successor) of the Prophet Muhammad (peace be upon him)?",
+      "choices": ["Abu Bakr", "Umar", "Uthman", "Ali"]
+    },
+    {
+       
+      "question": "What is the term for the pilgrimage to Mecca that Muslims perform at least once in their lifetime?",
+      "choices": ["Hajj", "Umrah", "Istisqaa", "Tawaf"]
+    },
+    {
+       
+      "question": "What is the name of the Islamic month of fasting?",
+      "choices": ["Ramadan", "Shawwal", "Muharram", "Dhu al-Hijjah"]
+    },
+    {
+       
+      "question": "What is the term for the struggle or striving in the way of Allah?",
+      "choices": ["Hijra", "Hijab", "Jihad", "Halal"]
+    },
+    {
+       
+      "question": "What is the name of the treaty that was signed between the Muslims of Medina and the tribes of Mecca?",
+      "choices": ["Treaty of Hudaybiyyah", "Treaty of Aqaba", "Treaty of Hudaibiya", "Treaty of Badr"]
+    },
+    {
+       
+      "question": "What is the term for the formal prayer observed by Muslims five times a day?",
+      "choices": ["Salat", "Sawm", "Zakat", "Hajj"]
+    }
+  ]
+}
 }

@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart'; // Import CupertinoLocalizations
 import 'package:flutter/material.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-
 import 'package:muslimapp/modules/splash_screen.dart';
 
 void main() async {

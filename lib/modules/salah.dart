@@ -149,7 +149,7 @@ class _SalahWidgetState extends State<SalahWidget> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Salah'),
+        title: Text(translate('plural.salah_page.appBarTitle')),
         backgroundColor: Colors.teal,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
