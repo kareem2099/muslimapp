@@ -61,7 +61,18 @@ class _MyNavigationRailState extends State<MyNavigationRail> {
 
   @override
   Widget build(BuildContext context) {
-    return widget.hideRail ? _buildExpandedButton() : _buildNavigationRail();
+    return Stack(
+      children: [
+        Positioned(
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          child: widget.hideRail ? SizedBox.shrink() : _buildNavigationRail(),
+        ),
+        // Other widgets like DailyVerseCard and AzkarElsabahCardWidget will be positioned here
+      ],
+    );
   }
 
   Widget _buildNavigationRail() {
@@ -196,18 +207,6 @@ class _MyNavigationRailState extends State<MyNavigationRail> {
         ),
         const VerticalDivider(thickness: 1, width: 1),
         // This is the main content.
-        Expanded(
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                const Text('Tap on FloatingActionButton to expand'),
-                const SizedBox(height: 20),
-                Text('selectedIndex: $_selectedIndex'),
-              ],
-            ),
-          ),
-        ),
       ],
     );
   }
@@ -255,7 +254,7 @@ class MyNavigationRailFab extends StatelessWidget {
       builder: (BuildContext context, Widget? child) {
         // The extended fab has a shorter height than the regular fab.
         return Container(
-          height: 56,
+          height: 40,
           padding: EdgeInsets.symmetric(
             vertical: lerpDouble(0, 6, animation.value)!,
           ),

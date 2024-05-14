@@ -1,5 +1,6 @@
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:quran/quran.dart' as quran;
+import 'dart:math';
 
 class Surah {
   final String name;
@@ -73,3 +74,30 @@ List<Surah> allsurahsDetails = List.generate(114, (index) {
     ],
   );
 });
+
+// Function to get a random verse
+Map<String, dynamic> getRandomVerse() {
+  Random random = Random();
+  int randomSurahIndex = random.nextInt(114); // Generate random Surah index
+  int numberOfVerses = int.parse(allsurahsDetails[randomSurahIndex]
+      .numberOfVerses); // Parse numberOfVerses as an integer
+  int randomVerseIndex =
+      random.nextInt(numberOfVerses) + 1; // Generate random verse index
+  String verse = quran.getVerse(
+      randomSurahIndex + 1, randomVerseIndex); // Get the verse text
+  String translation = quran.getVerseTranslation(
+      randomSurahIndex + 1, randomVerseIndex); // Get the verse translation text
+  return {
+    'surah': allsurahsDetails[randomSurahIndex].name,
+    'verseNumber': randomVerseIndex,
+    'verse': verse,
+    'translation': translation,
+  };
+}
+
+void main() {
+  Map<String, dynamic> todayVerse = getRandomVerse();
+  print(
+      'Today\'s Verse: ${todayVerse['surah']} ${todayVerse['verseNumber']}: ${todayVerse['verse']}');
+  print('Translation: ${todayVerse['translation']}');
+}
